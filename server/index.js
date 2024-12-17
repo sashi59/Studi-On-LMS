@@ -27,7 +27,7 @@ if (!fs.existsSync(uploadDir)) {
 }
 
 // MongoDB Connection
-const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:3000';
+const CLIENT_URL = "https://studi-on-lms.onrender.com" || 'http://localhost:3000';
 const port = process.env.PORT || 5000;
 
 mongoose.connect(process.env.MONGO_URI).then(() => {
